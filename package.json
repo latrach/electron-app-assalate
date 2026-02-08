@@ -13,7 +13,8 @@
     "mac": {
       "category": "public.app-category.lifestyle",
       "icon": "assets/icon.icns",
-      "target": "dmg"
+      "target": "dmg",
+      "identity": null
     },
     "files": [
       "main.js",
