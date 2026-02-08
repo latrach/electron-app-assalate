@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assalate - Orléans</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="drag-region"></div>
+
+  <div class="container">
+    <header>
+      <h1 class="app-title">&#xFDFD;</h1>
+      <div class="location">Orléans, France</div>
+      <div class="date-container">
+        <div id="gregorian-date" class="date-gregorian"></div>
+        <div id="hijri-date" class="date-hijri"></div>
+      </div>
+    </header>
+
+    <div class="countdown-section">
+      <div class="countdown-label">Prochaine prière : <span id="next-prayer-name">--</span></div>
+      <div class="countdown-timer" id="countdown">--:--:--</div>
+    </div>
+
+    <div class="prayers-list" id="prayers-list">
+      <div class="prayer-row" data-prayer="fajr">
+        <span class="prayer-icon">🌙</span>
+        <span class="prayer-name">Fajr</span>
+        <span class="prayer-time" id="time-fajr">--:--</span>
+      </div>
+      <div class="prayer-row sunrise" data-prayer="sunrise">
+        <span class="prayer-icon">🌅</span>
+        <span class="prayer-name">Shuruk</span>
+        <span class="prayer-time" id="time-sunrise">--:--</span>
+      </div>
+      <div class="prayer-row" data-prayer="dhuhr">
+        <span class="prayer-icon">☀️</span>
+        <span class="prayer-name">Dhuhr</span>
+        <span class="prayer-time" id="time-dhuhr">--:--</span>
+      </div>
+      <div class="prayer-row" data-prayer="asr">
+        <span class="prayer-icon">🌤️</span>
+        <span class="prayer-name">Asr</span>
+        <span class="prayer-time" id="time-asr">--:--</span>
+      </div>
+      <div class="prayer-row" data-prayer="maghrib">
+        <span class="prayer-icon">🌇</span>
+        <span class="prayer-name">Maghrib</span>
+        <span class="prayer-time" id="time-maghrib">--:--</span>
+      </div>
+      <div class="prayer-row" data-prayer="isha">
+        <span class="prayer-icon">🌃</span>
+        <span class="prayer-name">Isha</span>
+        <span class="prayer-time" id="time-isha">--:--</span>
+      </div>
+    </div>
+
+    <footer>
+      <div class="method-info">Source : assalate.latrach.net</div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

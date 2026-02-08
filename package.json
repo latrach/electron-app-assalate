@@ -1,0 +1,33 @@
+{
+  "name": "assalate",
+  "version": "1.0.0",
+  "description": "Horaires de prière pour Orléans - Application Electron macOS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "net.latrach.assalate",
+    "productName": "Assalate",
+    "mac": {
+      "category": "public.app-category.lifestyle",
+      "target": "dmg"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "assets/**/*"
+    ]
+  },
+  "author": "Latrach",
+  "license": "MIT",
+  "dependencies": {
+    "adhan": "^4.4.3"
+  },
+  "devDependencies": {
+    "electron": "^40.2.1",
+    "electron-builder": "^26.7.0"
+  }
+}
